@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	<style type="text/css">
+	
+		html{margin: 0px;padding: 0px;}
+		a{display: inline-block;-block;color: black;text-decoration: none;}
+		a:hover{color: blue;}
+		.hand{width: 70vw;position: absolute;
+			top: 6vw;left: 15vw;
+			pointer-events: none;}
+		p{font-family: "Oswald";text-align: center;
+			font-size: 1.8vw;padding: 9vw;
+			animation: pcolor 2s infinite alternate;}
+			@keyframes pcolor{to{color: white;}}
+		footer{text-align: right;right: 90vw;
+			font-size: 0.9vw;padding: 26vw 0vw 0vw 0vw;}
+
+		.oswald-400 {font-family: "Oswald", sans-serif;
+			font-optical-sizing: auto;font-weight: <400>;
+			font-style: normal;}
+
+		.na1-le{background: #FFEBE3;width: 1.6vw;height: 3.5vw;
+			position: absolute;top: 22.2vw;left: 45.8vw;
+			rotate: 10deg;border-radius: 90% 10% 25% 50%;}
+		.na2-le{background: #FFEBE3;width: 2.1vw;height: 3.5vw;
+			position: absolute;top: 8.4vw;left: 40.2vw;
+			rotate: 2deg;border-radius: 50% 50% 25% 25%;}
+		.na3-le{background: #FFEBE3;width: 2.2vw;height: 3.7vw;
+			position: absolute;top: 6vw;left: 36.8vw;
+			rotate: 5deg;border-radius: 50% 50% 25% 25%;}
+		.na4-le{background: #FFEBE3;width: 2.1vw;height: 3.5vw;
+			position: absolute;top: 8.3vw;left: 33.2vw;
+			rotate: 10deg;border-radius: 50% 50% 25% 25%;}
+		.na5-le{background: #FFEBE3;width: 1.4vw;height: 3vw;
+			position: absolute;top: 13.6vw;left: 28.2vw;
+			rotate: 10deg;border-radius: 30% 50% 25% 25%;}
+
+		.na1-ri{background: #FFEBE3;width: 1.6vw;height: 3.5vw;
+			position: absolute;top: 22.2vw;left: 52.5vw;
+			rotate: -10deg;border-radius: 10% 90% 50% 25%;}
+		.na2-ri{background: #FFEBE3;width: 2.1vw;height: 3.5vw;position: absolute;top: 8.4vw;left: 57.8vw;
+			rotate: -2deg;border-radius: 50% 50% 25% 25%;}
+		.na3-ri{background: #FFEBE3;width: 2.2vw;height: 3.7vw;
+			position: absolute;top: 6vw;left: 61vw;
+			rotate: -5deg;border-radius: 50% 50% 25% 25%;}
+		.na4-ri{background: #FFEBE3;width: 2.1vw;height: 3.5vw;
+			position: absolute;top: 8.3vw;left: 64.8vw;
+			rotate: -10deg;border-radius: 50% 50% 25% 25%;}
+		.na5-ri{background: #FFEBE3;width: 1.4vw;height: 3vw;
+			position: absolute;top: 13.6vw;left: 70.4vw;
+			rotate: -10deg;border-radius: 50% 30% 25% 25%;}
+
+		.gra{background: linear-gradient(180deg, rgba(230, 190, 190, 0.5), rgba(255, 255, 255, 0.0));
+			mix-blend-mode: multiply;pointer-events: none;}
+
+	input[type="color"] {appearance: none;
+		background: transparent;border: none;padding: 0px;
+		inline-size: 0px;cursor: pointer;
+		width: 3vw;height: 3vw;margin: 0px; 
+		position: absolute;top: 2vw;}
+		#b5{left: 28vw}
+		#b4{left: 32vw}
+		#b3{left: 36vw}
+		#b2{left: 40vw}
+		#b1{left: 44vw}
+		#b6{left: 53vw}
+		#b7{left: 57vw}
+		#b8{left: 61vw}
+		#b9{left: 65vw}
+		#b10{left: 69vw}
+	</style>
+	<title>매니큐어 바르기</title>
+</head>
+<body>
+	<input type="color" id="b1">
+	<input type="color" id="b2">
+	<input type="color" id="b3">
+	<input type="color" id="b4">
+	<input type="color" id="b5">
+	<input type="color" id="b6">
+	<input type="color" id="b7">
+	<input type="color" id="b8">
+	<input type="color" id="b9">
+	<input type="color" id="b10">
+		<p>click on the nail<br>to reset</p>
+	<img src="hand.png" class="hand">
+	<div class="na1-le" id="na1le"></div>
+	<div class="na2-le" id="na2le"></div>
+	<div class="na3-le" id="na3le"></div>
+	<div class="na4-le" id="na4le"></div>
+	<div class="na5-le" id="na5le"></div>
+	<div class="na1-ri" id="na1ri"></div>
+	<div class="na2-ri" id="na2ri"></div>
+	<div class="na3-ri" id="na3ri"></div>
+	<div class="na4-ri" id="na4ri"></div>
+	<div class="na5-ri" id="na5ri"></div>
+		<div class="na1-le gra"></div>
+		<div class="na2-le gra"></div>
+		<div class="na3-le gra"></div>
+		<div class="na4-le gra"></div>
+		<div class="na5-le gra"></div>
+		<div class="na1-ri gra"></div>
+		<div class="na2-ri gra"></div>
+		<div class="na3-ri gra"></div>
+		<div class="na4-ri gra"></div>
+		<div class="na5-ri gra"></div>
+	<img src="shining.png" class="hand">
+	<audio id="clearSound" src="sound1.mp3" preload="auto"></audio>
+	<audio id="colorSound" src="sound2.mp3" preload="auto"></audio>
+	<script type="text/javascript">
+		function playColorSound() {
+			var audio = document.getElementById("colorSound");
+			audio.currentTime = 0;audio.play();}
+		b1.oninput = function(){na1le.style.background = b1.value;playColorSound();}
+		b2.oninput = function(){na2le.style.background = b2.value;playColorSound();}
+		b3.oninput = function(){na3le.style.background = b3.value;playColorSound();}
+		b4.oninput = function(){na4le.style.background = b4.value;playColorSound();}
+		b5.oninput = function(){na5le.style.background = b5.value;playColorSound();}
+		b6.oninput = function(){na1ri.style.background = b6.value;playColorSound();}
+		b7.oninput = function(){na2ri.style.background = b7.value;playColorSound();}
+		b8.oninput = function(){na3ri.style.background = b8.value;playColorSound();}
+		b9.oninput = function(){na4ri.style.background = b9.value;playColorSound();}
+		b10.oninput = function(){na5ri.style.background = b10.value;playColorSound();}
+
+		function playClickSound() {
+		var audio = document.getElementById("clearSound");
+		audio.currentTime = 0;audio.play();}
+
+		na1le.onclick = function(){na1le.style.background = '#FFEBE3'; playClickSound();}
+		na2le.onclick = function(){na2le.style.background = '#FFEBE3'; playClickSound();}
+		na3le.onclick = function(){na3le.style.background = '#FFEBE3'; playClickSound();}
+		na4le.onclick = function(){na4le.style.background = '#FFEBE3'; playClickSound();}
+		na5le.onclick = function(){na5le.style.background = '#FFEBE3'; playClickSound();}
+		na1ri.onclick = function(){na1ri.style.background = '#FFEBE3'; playClickSound();}
+		na2ri.onclick = function(){na2ri.style.background = '#FFEBE3'; playClickSound();}
+		na3ri.onclick = function(){na3ri.style.background = '#FFEBE3'; playClickSound();}
+		na4ri.onclick = function(){na4ri.style.background = '#FFEBE3'; playClickSound();}
+		na5ri.onclick = function(){na5ri.style.background = '#FFEBE3'; playClickSound();}
+	</script>
+</body>
+<footer>
+	© 2024 김서연 All rights reserved. <br>sowyi3713@gmail.com <br>sound from 
+	<a href="https://www.youtube.com/watch?v=BlmezHTpyfA">봉봉뮤직bongbongmusic</a>
+</footer>
+</html>
